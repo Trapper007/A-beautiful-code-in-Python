@@ -4,7 +4,7 @@ from collections import defaultdict
 
 # Textdatei einlesen und Dictionary füllen
 tageswert = defaultdict(list)
-with open('temperatur_draußen Temp_2.txt') as f:
+with open('Teil_08_temperatur_draußen Temp_2.txt') as f:
     for zeile in f:
         datumStr, _, t = zeile.split()
         datum = dt.datetime.strptime(datumStr, '%d.%m.%Y')
